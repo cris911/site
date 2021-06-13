@@ -1,0 +1,49 @@
+@font-face {
+  font-family: DXRigraf;
+  src: url(./fonts/DXRigraf/DXRigraf-SemBdExpIta.otf);
+  font-stretch: expanded;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: DXRigraf;
+  src: url(./fonts/DXRigraf/DXRigraf-SemiBold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DXRigraf;
+  src: url(./fonts/DXRigraf/DXRigraf-SemiBoldExpanded.otf);
+  font-weight: bold;
+  font-stretch: expanded;
+}
+
+@font-face {
+  font-family: DXRigraf;
+  src: url(./fonts/DXRigraf/DXRigraf-SemiBoldItalic.otf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.site {
+  height: 100vh;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-family: DXRigraf;
+  font-weight: bold;
+}
+
+.site-header-logo {
+  height: 100px;
+  pointer-events: none;
+}
+
+.site-header-text {
+  font-size: 100px;
+}
