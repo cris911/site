@@ -25,25 +25,3 @@
   font-weight: bold;
   font-style: italic;
 }
-
-.site {
-  height: 100vh;
-}
-
-.site-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  font-family: DXRigraf;
-  font-weight: bold;
-}
-
-.site-header-logo {
-  height: 100px;
-  pointer-events: none;
-}
-
-.site-header-text {
-  font-size: 100px;
-}

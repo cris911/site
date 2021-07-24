@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BioBox = (props) => {
+const BioBox = () => {
   return (
     <p>
         La comunicación es mi fuerte, me gusta trabajar desde 
