@@ -5,7 +5,7 @@ import MainNavBar from './components/MainNavBar/MainNavBar';
 import styled from 'styled-components'
 
 function App() {
-  const MainContainer = styled.div`
+  const MainContainer = styled.main`
   `
 
   const Sections = styled.div`

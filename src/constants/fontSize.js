@@ -2,7 +2,8 @@ const fontSizes = {
     xs: "10px",
     s: "20px",
     med: "40px",
-    large: "70px",
+    medLarge: "60px",
+    large: "80px",
     extraLarge: "100px",
     homePage: "200px"
 }
