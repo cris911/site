@@ -1,59 +1,53 @@
 import React from 'react'
-import {default as logo} from '../../logo.svg'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import fontSizes from '../../constants/fontSize'
 import mediaQueries from '../../constants/mediaQueries'
+import SvgEye from '../SVG/SvgEye'
+
+const NavBar = styled.nav`
+display: flex;
+justify-content: space-between;
+padding: 0 20px;
+align-items: center;
+margin-bottom: 0;
+@media (max-width: ${mediaQueries.medium}) {
+    flex-direction: column;
+    margin-bottom: 40px;
+};
+`
+const Item = styled.p`
+font-size: ${fontSizes.large};
+font-weight: bold;
+padding: 0 20px;
+margin: 0;
+cursor: pointer;
+@media (max-width: ${mediaQueries.medium}) {
+    font-size: ${fontSizes.medLarge};
+};
+`
+
+const Links = styled.div`
+display: flex;
+algin-items: center;
+`
+
 
 const MainNavBar = () => {
     
-    const NavBar = styled.nav`
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
-        align-items: center;
-        margin-bottom: 0;
-        @media (max-width: ${mediaQueries.medium}) {
-            flex-direction: column;
-            margin-bottom: 40px;
-        };
-    `
-    const Item = styled.p`
-        font-size: ${fontSizes.large};
-        font-weight: bold;
-        padding: 0 20px;
-        margin: 0;
-        @media (max-width: ${mediaQueries.medium}) {
-            font-size: ${fontSizes.medLarge};
-        };
-    `
+    const logoSize = "80px"
 
-    const Links = styled.div`
-        display: flex;
-        algin-items: center;
-    `
-    const Eye = styled.img`
-        padding: 40px;
-        height: 100px;
-        width: auto;
-        @media (max-width: ${mediaQueries.medium}) {
-            height: 80px;
-        };
-    `
+    let logoColor = "blue"
 
     return (
+
         <NavBar>
-            <Eye src={logo} />
+            <SvgEye height={logoSize} width={logoSize} fill={logoColor}/>
             <Links>
                 <Item>BIO</Item>
                 <Item>CONTACTO</Item>
             </Links>
         </NavBar>
     );
-};
-
-MainNavBar.propTypes = {
-  text: PropTypes.string
 };
 
 export default MainNavBar;

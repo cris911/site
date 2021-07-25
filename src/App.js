@@ -2,17 +2,19 @@ import './App.css';
 import React from 'react'
 import SectionTitle from './components/SectionTitle/SectionTitle'
 import MainNavBar from './components/MainNavBar/MainNavBar';
+import Footer from './components/Footer/Footer';
 import styled from 'styled-components'
 
+const MainContainer = styled.main`
+position: relative;
+`
+
+const Sections = styled.div`
+display: flex;
+flex-direction: column;
+`
+
 function App() {
-  const MainContainer = styled.main`
-
-  `
-
-  const Sections = styled.div`
-    display: flex;
-    flex-direction: column;
-  `
 
   return (
     <MainContainer className="site">
@@ -22,6 +24,7 @@ function App() {
         <SectionTitle text="LABERINTO"/>
         <SectionTitle text="ANÁLOGA"/>
       </Sections>
+      <Footer />
     </MainContainer>
   );
 }
