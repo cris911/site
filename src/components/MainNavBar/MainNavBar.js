@@ -20,6 +20,7 @@ const MainNavBar = () => {
     `
     const Item = styled.p`
         font-size: ${fontSizes.large};
+        font-weight: bold;
         padding: 0 20px;
         margin: 0;
         @media (max-width: ${mediaQueries.medium}) {
