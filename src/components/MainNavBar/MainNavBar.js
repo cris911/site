@@ -12,9 +12,10 @@ const MainNavBar = () => {
         justify-content: space-between;
         padding: 0 20px;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 0;
         @media (max-width: ${mediaQueries.medium}) {
             flex-direction: column;
+            margin-bottom: 40px;
         };
     `
     const Item = styled.p`
@@ -32,10 +33,10 @@ const MainNavBar = () => {
     `
     const Eye = styled.img`
         padding: 40px;
-        height: 80px;
+        height: 100px;
         width: auto;
         @media (max-width: ${mediaQueries.medium}) {
-            height: 60px;
+            height: 80px;
         };
     `
 
@@ -43,8 +44,8 @@ const MainNavBar = () => {
         <NavBar>
             <Eye src={logo} />
             <Links>
-                <Item>Acerca de</Item>
-                <Item>Contacto</Item>
+                <Item>BIO</Item>
+                <Item>CONTACTO</Item>
             </Links>
         </NavBar>
     );

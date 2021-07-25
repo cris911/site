@@ -6,6 +6,7 @@ import styled from 'styled-components'
 
 function App() {
   const MainContainer = styled.main`
+
   `
 
   const Sections = styled.div`

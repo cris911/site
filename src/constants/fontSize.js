@@ -5,6 +5,7 @@ const fontSizes = {
     medLarge: "60px",
     large: "80px",
     extraLarge: "100px",
+    medHomePage: "150px",
     homePage: "200px"
 }
 
