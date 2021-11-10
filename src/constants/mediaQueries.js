@@ -1,11 +1,11 @@
 const mediaQueries = {
-small:"576px",
-medium:"768px",
-large:"992px",
-extraLarge:"1200px",
-}
+  small: "576px",
+  medium: "768px",
+  large: "992px",
+  extraLarge: "1200px",
+};
 
-export default mediaQueries
+export default mediaQueries;
 
 // // Small devices (landscape phones, 576px and up)
 // @media (min-width: 576px) { ... }

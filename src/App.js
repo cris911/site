@@ -1,32 +1,29 @@
-import './App.css';
-import React from 'react'
-import SectionTitle from './components/SectionTitle/SectionTitle'
-import MainNavBar from './components/MainNavBar/MainNavBar';
-import Footer from './components/Footer/Footer';
-import styled from 'styled-components'
+import "./App.css";
+import React from "react";
+import MainNavBar from "./components/MainNavBar/MainNavBar";
+import Footer from "./components/Footer/Footer";
+import MainMenu from "./components/MainMenu/MainMenu";
+import styled from "styled-components";
+import BioBox from "./components/BioBox/BioBox";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const MainContainer = styled.main`
-position: relative;
-`
+  position: relative;
+`;
 
-const Sections = styled.div`
-display: flex;
-flex-direction: column;
-`
-
-function App() {
-
+const App = () => {
   return (
-    <MainContainer className="site">
-      <MainNavBar/>
-      <Sections>
-        <SectionTitle text="CRISIS"/>
-        <SectionTitle text="LABERINTO"/>
-        <SectionTitle text="ANÁLOGA"/>
-      </Sections>
-      <Footer />
-    </MainContainer>
+    <Router>
+      <MainContainer className="site">
+        <MainNavBar />
+        <Routes>
+          <Route exact path="/" element={MainMenu()} />
+          <Route exact path="/bio" element={BioBox()} />
+        </Routes>
+        <Footer />
+      </MainContainer>
+    </Router>
   );
-}
+};
 
 export default App;

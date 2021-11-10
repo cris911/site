@@ -1,5 +1,5 @@
 import * as React from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 function SvgEye(props) {
   return (
@@ -17,9 +17,9 @@ function SvgEye(props) {
 }
 
 SvgEye.propTypes = {
-    fill: PropTypes.string,
-    height: PropTypes.string,
-    width: PropTypes.string,
-  };
+  fill: PropTypes.string,
+  height: PropTypes.string,
+  width: PropTypes.string,
+};
 
 export default SvgEye;
