@@ -110,7 +110,7 @@ nav.main-menu {
 }
 
 .main-menu-half {
-    flex: 0.5;
+    display: none;
 }
 
 ul.main-menu-wrapper {
@@ -118,7 +118,7 @@ ul.main-menu-wrapper {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    flex: 0.5;
+    flex: 1;
     justify-content: space-between;
 }
 
@@ -146,10 +146,18 @@ main {
     width: 100%;
 }
 
-/* @media (min-width: 600px) {
+@media (min-width: 600px) {
+    .main-menu-half {
+        display: flex;
+        flex: 0.5;
+    }
+
+    ul.main-menu-wrapper {
+        flex: 0.5;
+    }
 }
 
-
+/* 
 @media (min-width: 768px) {
 } */
 
