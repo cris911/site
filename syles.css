@@ -144,7 +144,24 @@ main {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+    position: relative;
 }
+
+.main-wrapper-text {
+    position: absolute;
+    font-size: 3rem;
+}
+
+span.item-1 { left: 10%; top: 20%}
+span.item-2 { left: 10%; top: 25%}
+span.item-3 { left: 10%; top: 30%}
+span.item-4 { left: 10%; top: 35%}
+span.item-5 { left: 10%; top: 40%}
+span.item-6 { left: 10%; top: 45%}
+span.item-7 { left: 10%; top: 50%}
+span.item-8 { left: 10%; top: 55%}
+span.item-9 { left: 10%; top: 60%}
+span.item-10 { left: 10%; top: 65%}
 
 @media (min-width: 600px) {
     .main-menu-half {
@@ -155,6 +172,17 @@ main {
     ul.main-menu-wrapper {
         flex: 0.5;
     }
+
+    span.item-1 { left: 30%; top: 20%}
+    span.item-2 { left: 60%; top: 20%}
+    span.item-3 { left: 30%; top: 30%}
+    span.item-4 { left: 60%; top: 30%}
+    span.item-5 { left: 25%; top: 40%}
+    span.item-6 { left: 60%; top: 40%}
+    span.item-7 { left: 25%; top: 50%}
+    span.item-8 { left: 65%; top: 50%}
+    span.item-9 { left: 30%; top: 60%}
+    span.item-10 { left: 65%; top: 60%}
 }
 
 /* 
