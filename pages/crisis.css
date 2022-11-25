@@ -1,0 +1,12 @@
+.crisis-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+}
+
+.crisis-text {
+    padding-top: 5rem;
+    width: 50%;
+    font-size: 3rem;
+}
